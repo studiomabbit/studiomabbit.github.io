@@ -47,7 +47,7 @@ $(document).ready(function () {
                 }).appendTo('.pagewrapper');
 
                 var twitterbtn = document.createElement('a');
-                twitterbtn.href = ('https://twitter.com/intent/tweet?text=Check%20out%20this%20update%20from%20%40MuffinMob!%0Ahttps://muffinmob.github.io/index.html%3fpost%3d' + i);
+                twitterbtn.href = ('https://twitter.com/intent/tweet?text=Check%20out%20this%20update%20from%20%40StudioMabbit!%0Ahttps://studiomabbit.github.io/index.html%3fpost%3d' + i);
                 twitterbtn.className = 'tweet';
                 twitterbtn.innerHTML = 'Tweet';
                 document.getElementById('blog-' + i).append(twitterbtn);
