@@ -141,9 +141,9 @@ function addBlog() {
 
     var id = ('blog-' + (now.getMonth() + 1) + '' + now.getDate() + '' + now.getFullYear() + '' + now.getHours() + '' + now.getMinutes() + '' + now.getSeconds() + '' + now.getMilliseconds());
 
-    if (title.length > 0 && id.length > 0 && content.length > 0 && user.displayName.length > 0) {
+    if (title.length > 0 && id.length > 0 && content.length > 0) { //&& user.displayName.length > 0
         set(ref(db, '/blogs/' + id), {
-            "author": user.displayName,
+            "author": "Studio Mabbit", //user.displayName,
             "content": content,
             "date": date,
             "title": title
