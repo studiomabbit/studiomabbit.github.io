@@ -1,0 +1,25 @@
+<script>
+    if (window.location.pathname.indexOf('projects') > -1) {
+        $('#nav-projects').css("background-color", "#181818");
+    } else if (window.location.pathname.indexOf('about') > -1) {
+        $('#nav-about').css("background-color", "#181818");
+    } else {
+        $('#nav-home').css("background-color", "#181818");
+    }
+</script>
+
+<div class="banner no-select">
+    <div class="banner-content">
+        <a href="/index.html"><img src="/images/site/site_logo.png" alt="Home | Muffin Mob"></a>
+        <div class="banner-text">
+            <h1>MUFFIN MOB</h1>
+            <h2>GAME STUDIO</h2>
+        </div>
+    </div>
+</div>
+
+<ul class="navigation no-select">
+    <li><a id="nav-home" href="/index.html">Home</a></li>
+    <li><a id="nav-projects" href="/projects/index.html">Projects</a></li>
+    <li><a id="nav-about" href="/about.html">Our Team</a></li>
+</ul>
