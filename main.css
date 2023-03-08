@@ -2,6 +2,7 @@
     --page-background: #181818;
     --container-background: #0f0f0f;
     --text-color: rgb(124, 124, 124);
+    --secondary-text-color: #dd8161;
     --default-font: 'Lexend Deca';
 }
 
@@ -73,7 +74,7 @@ body {
 .banner .banner-content .banner-text h2 {
     margin-top: -25px;
     font-size: 16px;
-    color: #fffae2;
+    color: var(--secondary-text-color);
 }
 
 @media only screen and (max-width: 400px) {
@@ -204,7 +205,7 @@ hr.solid {
 }
 
 .bio_desc a:hover {
-    color: #ffffff;
+    color: var(--secondary-text-color);
 }
 
 .icons {

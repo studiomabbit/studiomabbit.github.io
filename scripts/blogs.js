@@ -33,7 +33,7 @@ $(document).ready(function () {
             var list = snapshot.val();
             var listLength = (Object.keys(list).length);
 
-            for (let i = (listLength - 1); i > -1; i--) {
+            for (let i = 0; i < (listLength); i++) {
                 var object = Object.values(list)[i];
                 var author = Object.values(object)[0];
                 var content = Object.values(object)[1];
@@ -50,6 +50,7 @@ $(document).ready(function () {
                 twitterbtn.href = ('https://twitter.com/intent/tweet?text=Check%20out%20this%20update%20from%20%40StudioMabbit!%0Ahttps://studiomabbit.github.io/index.html%3fpost%3d' + i);
                 twitterbtn.className = 'tweet';
                 twitterbtn.innerHTML = 'Tweet';
+                twitterbtn.setAttribute('target', '_blank');
                 document.getElementById('blog-' + i).append(twitterbtn);
 
                 $('<h1>', {
