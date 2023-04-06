@@ -248,6 +248,16 @@ hr.solid {
     opacity: 100%;
 }
 
+.icons .link-derek {
+    background-image: url("images/icons/derek1.png")
+}
+
+.icons .link-derek:hover {
+    background-image: url("images/icons/derek.png");
+    filter: none;
+    opacity: 100%;
+}
+
 .icons .link-forrest {
     background-image: url("images/icons/forrest1.png")
 }
@@ -305,6 +315,47 @@ hr.solid {
     }
 }
 
+/*Projects page*/
+.projectwrapper {
+    background-color: var(--container-background);
+    width: 50%;
+    display: flex;
+    margin: 20px auto;
+    flex-direction: row;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: 650px;
+    min-width: 400px;
+}
+
+.projectwrapper:hover {
+    box-shadow: rgba(0, 0, 0, .3) 0 0 0 1000000px inset;
+}
+
+.projectwrapper .projectimg {
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projectwrapper .lostbitslogo {
+    width: 165px;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(66deg) brightness(107%) contrast(103%);
+}
+
+.projectwrapper .project-desc p {
+    color: var(--text-color);
+}
+
+.texttwo {
+    color: var(--secondary-text-color);
+}
+
 @media only screen and (max-width: 949px) {
     .bio_desc p {
         font-size: 14px;
@@ -332,6 +383,10 @@ hr.solid {
     }
 
     .biowrapper {
+        width: 80%;
+    }
+
+    .projectwrapper {
         width: 80%;
     }
 
@@ -577,33 +632,4 @@ hr.solid {
     .blogmeta {
         font-size: 12px;
     }
-}
-
-/*Projects page*/
-.projectwrapper {
-    background-color: var(--container-background);
-    width: 40%;
-    display: flex;
-    margin: 20px auto;
-    flex-direction: row;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.projectwrapper:hover {
-    box-shadow: rgba(0, 0, 0, .3) 0 0 0 1000000px inset;
-}
-
-.projectwrapper img {
-    padding: 10px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.projectwrapper .project-desc p {
-    color: var(--text-color);
 }
