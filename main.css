@@ -26,6 +26,8 @@
     /* Legacy iOS */
 }
 
+@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+
 body {
     width: 100%;
     margin: 0 auto;
@@ -297,6 +299,161 @@ hr.solid {
     opacity: 100%;
 }
 
+/*Projects*/
+#lostbits {
+    background: url("images/projects/lost_bits/bg.png");
+}
+
+.projectwrapper {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5em;
+    background-color: var(--container-background);
+    padding: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.projectcolumns {
+    display: flex;
+}
+
+.col1 {
+    flex: 4;
+    display: flex;
+}
+
+.col2 {
+    flex: 1;
+    display: flex;
+}
+
+.projecttitle {
+    color: white;
+    text-align: left;
+    font-size: 14px;
+}
+
+.projecttitle .lostbits {
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 5em;
+}
+
+.projectdesc {
+    color: white;
+    font-size: 2em;
+    text-align: left;
+}
+
+.projectdesc,
+.lostbits {
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 2em;
+}
+
+.projectplatforms {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.projectplatforms a {
+    width: 125px;
+    height: 125px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    filter: invert(100%) brightness(100%) contrast(100%);
+}
+
+.projectplatforms .steam {
+    background-image: url("images/icons/steam.png");
+}
+
+.projectplatforms .itchio {
+    background-image: url("images/icons/itchio.png");
+}
+
+/*Carousel*/
+.carouselcontainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.projectwrapper {
+    max-width: 1000px;
+}
+
+.slide {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
 @media only screen and (max-width: 1705px) {
     .bio {
         flex-direction: column;
@@ -315,43 +472,6 @@ hr.solid {
     }
 }
 
-/*Projects page*/
-.projectwrapper {
-    background-color: var(--container-background);
-    width: 50%;
-    display: flex;
-    margin: 20px auto;
-    flex-direction: row;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration: none;
-    max-width: 650px;
-    min-width: 400px;
-}
-
-.projectwrapper:hover {
-    box-shadow: rgba(0, 0, 0, .3) 0 0 0 1000000px inset;
-}
-
-.projectwrapper .projectimg {
-    padding: 10px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.projectwrapper .lostbitslogo {
-    width: 165px;
-    height: auto;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(66deg) brightness(107%) contrast(103%);
-}
-
-.projectwrapper .project-desc p {
-    color: var(--text-color);
-}
-
 .texttwo {
     color: var(--secondary-text-color);
 }
@@ -359,6 +479,21 @@ hr.solid {
 @media only screen and (max-width: 949px) {
     .bio_desc p {
         font-size: 14px;
+    }
+
+    .projectdesc {
+        font-size: 24px;
+    }
+
+    .projecttitle {
+        font-size: 14px;
+    }
+
+    .projectplatforms a {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .bio img {
@@ -386,8 +521,19 @@ hr.solid {
         width: 80%;
     }
 
-    .projectwrapper {
-        width: 80%;
+    .projectdesc {
+        font-size: 12px;
+    }
+
+    .projecttitle {
+        font-size: 10px;
+    }
+
+    .projectplatforms a {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
 
     .bio_desc p {
@@ -405,6 +551,22 @@ hr.solid {
 }
 
 @media only screen and (max-width: 566px) {
+    .projectdesc {
+        font-size: 10px;
+    }
+
+    .projecttitle {
+        font-size: 5px;
+    }
+
+    .projectplatforms a {
+        width: 30px;
+        height: 30px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+
     .biowrapper {
         width: 90%;
     }
@@ -632,4 +794,11 @@ hr.solid {
     .blogmeta {
         font-size: 12px;
     }
+}
+
+.sticky {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
