@@ -20,13 +20,13 @@ $(document).ready(function () {
             icon.setAttribute("rel", favicons[i].rel);
         }
         if (favicons[i].href) {
-            icon.setAttribute("rel", favicons[i].href);
+            icon.setAttribute("href", favicons[i].href);
         }
         if (favicons[i].sizes) {
-            icon.setAttribute("rel", favicons[i].sizes);
+            icon.setAttribute("sizes", favicons[i].sizes);
         }
         if (favicons[i].type) {
-            icon.setAttribute("rel", favicons[i].type);
+            icon.setAttribute("type", favicons[i].type);
         }
 
         docHead.appendChild(icon);
