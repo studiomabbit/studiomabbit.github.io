@@ -802,3 +802,11 @@ hr.solid {
     top: 0;
     width: 100%;
 }
+
+.footer {
+    margin-top: 2em;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    transform: translatex(100%);
+}

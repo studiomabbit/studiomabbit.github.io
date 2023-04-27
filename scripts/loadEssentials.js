@@ -10,8 +10,7 @@ $(document).ready(function () {
     let docHead = document.querySelector("head"); //select document head
 
     $(".header").load("/scripts/header.html"); //import navigation bar
-
-    // $("footer").load("/scripts/footer.html"); //import page footer
+    $(".footer").load("/scripts/footer.html"); //import footer bar
 
     for (let i = 0; i < favicons.length; i++) { //apply favicon to the document head
         let icon = document.createElement("link");
