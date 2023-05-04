@@ -806,7 +806,7 @@ hr.solid {
 .footer {
     margin-top: 2em;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     transform: translatex(100%);
 }
